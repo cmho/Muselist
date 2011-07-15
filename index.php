@@ -12,17 +12,14 @@
       <?
       include('spyc.php');
       $muselist = Spyc::YAMLLoad('data.yaml');
-      foreach ($muse in $muselist) {
+      foreach ($muselist as $muse) {
           ?>
       <div class="muse">
-        <img src="muse_images/<? echo $muse['pic']; ?>" />
+        <img src="muse_images/<? echo $muse['image']; ?>" class="pic" />
         <ul class="muse_info">
           <li class="name"><? echo $muse['name']; ?></li>
           <? if ($muse['status'] == "active" && $muse['game']) : ?>
           <li class="game">
-            http://l-stat.livejournal.com/img/community.gif
-            http://s.dreamwidth.org/img/silk/identity/community.png
-            http://www.insanejournal.com/img/community.gif
             <? if ($muse['site'] == "LJ") : ?>
             <a href="http://<? echo $muse['game']; ?>.livejournal.com/profile"><img src="http://l-stat.livejournal.com/img/community.gif" border="0" style="vertical-align: bottom;"></a><a href="http://<? echo $muse['game']; ?>.livejournal.com/"><span style="font-weight: bold;"><? echo $muse['game']; ?></span></a>
             <? elseif ($muse['site'] == "IJ") : ?>

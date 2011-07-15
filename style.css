@@ -1,0 +1,35 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 75%;
+	text-align: center;
+}
+
+#header {
+	width: 600px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0px auto;
+}
+
+#muses {
+	width: 600px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.muse {
+	clear: both;
+	margin-bottom: 15px;
+}
+
+.muse .pic {
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+.muse ul {
+	margin: 0 0 0 115px;
+	padding: 0;
+	list-style: none;
+}
